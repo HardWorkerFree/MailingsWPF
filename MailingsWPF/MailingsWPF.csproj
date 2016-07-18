@@ -7,8 +7,8 @@
     <ProjectGuid>{D55BCDDC-6EA3-46E5-9E4E-48DFF7676131}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>WpfXMLDataGrid</RootNamespace>
-    <AssemblyName>WpfXMLDataGrid</AssemblyName>
+    <RootNamespace>MailingsWPF</RootNamespace>
+    <AssemblyName>MailingsWPF</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
