@@ -49,13 +49,15 @@ namespace MailingsWPF
         {
             int mailingsAmount = Convert.ToInt32(needToGenerateTextBox.Text);
 
+            this._progressDialog = new ProgressDialog();
+            this._progressDialog.loadingProgressBar.Minimum = 0;
+            this._progressDialog.loadingProgressBar.Maximum = mailingsAmount;
+
             this._stopThread = false;
             this._thread = new Thread(new ParameterizedThreadStart(MailingsGeneratorThread));
             this._thread.Start(mailingsAmount);
 
-            this._progressDialog = new ProgressDialog();
-            this._progressDialog.loadingProgressBar.Minimum = 0;
-            this._progressDialog.loadingProgressBar.Maximum = mailingsAmount;
+
 
             if (this._progressDialog.ShowDialog() == true)
             {
